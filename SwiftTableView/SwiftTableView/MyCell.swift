@@ -11,6 +11,7 @@ import UIKit
 class MyCell: UITableViewCell {
 
     var lblTitle = UILabel()
+    var name : String = "hahaah"
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
