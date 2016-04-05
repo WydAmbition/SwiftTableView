@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableCell" id="KGk-i7-Jjw" customClass="MyTableCell" customModule="SwiftTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wkl-8m-fKB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alP-TW-P7j">
+                        <rect key="frame" x="18" y="8" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wkl-8m-fKB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="B5p-bv-vO1"/>
+                    <constraint firstAttribute="bottom" secondItem="Wkl-8m-fKB" secondAttribute="bottom" constant="-0.5" id="F73-wi-gDp"/>
+                    <constraint firstItem="alP-TW-P7j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="LAU-Qg-IYi"/>
+                    <constraint firstItem="Wkl-8m-fKB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mDY-E1-grT"/>
+                    <constraint firstItem="alP-TW-P7j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="x2K-Mv-kyH"/>
+                    <constraint firstAttribute="trailing" secondItem="Wkl-8m-fKB" secondAttribute="trailing" id="zs9-6y-41n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ImgView" destination="Wkl-8m-fKB" id="hyP-i5-8Bk"/>
+                <outlet property="mytitle" destination="alP-TW-P7j" id="7Ik-ky-rKb"/>
+            </connections>
+            <point key="canvasLocation" x="232" y="178"/>
+        </tableViewCell>
+    </objects>
+</document>
