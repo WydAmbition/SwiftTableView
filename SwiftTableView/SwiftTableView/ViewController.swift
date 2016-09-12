@@ -24,7 +24,7 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("hahahah")
+        print("hahahah123456")
         self.title = "tableView"
         self.view.backgroundColor = UIColor.whiteColor()
         
